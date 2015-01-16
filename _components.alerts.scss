@@ -20,14 +20,14 @@ $alert-icon-background:         rgba(black, .2);
 
 .alert,
 %alert {
-	display: block;
-	position: relative;
-	overflow: hidden;
-	color: $alert-text-color;
-	
-	&:hover {
-		.alert__close { opacity: 1; }
-	}
+    display: block;
+    position: relative;
+    overflow: hidden;
+    color: $alert-text-color;
+    
+    &:hover {
+        .alert__close { opacity: 1; }
+    }
 }
 
 .alert--positive,
