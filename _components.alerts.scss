@@ -20,46 +20,34 @@ $alert-icon-background:         rgba(black, .2);
 
 
 
-.alert,
-%alert {
+.c-alert {
     display: block;
     position: relative;
     overflow: hidden;
     color: $alert-text-color;
     
     &:hover {
-        .alert__close { opacity: 1; }
+        .c-alert__close { opacity: 1; }
     }
 }
 
-.alert--positive,
-%alert--positive    { background: $alert--positive-background; }
-
-.alert--negative,
-%alert--negative    { background: $alert--negative-background; }
-
-.alert--warning,
-%alert--warning     { background: $alert--warning-background; }
-
-.alert--info,
-%alert--info        { background: $alert--info-background; }
+.c-alert--positive  { background: $alert--positive-background; }
+.c-alert--negative  { background: $alert--negative-background; }
+.c-alert--warning   { background: $alert--warning-background; }
+.c-alert--info      { background: $alert--info-background; }
 
 
-    .alert__body,
-    %alert__body,
-        .alert__icon,
-        %alert__icon {
-            padding: $alert-padding;
-        }
+    .c-alert__body,
+    .c-alert__icon {
+        padding: $alert-padding;
+    }
     
-    .alert__icon,
-    %alert__icon {
+    .c-alert__icon {
         text-align: center;
         background-color: $alert-icon-background;
     }
     
-    .alert__close,
-    %alert__close {
+    .c-alert__close {
         position: absolute;
         top: $alert-padding;
         right: $alert-padding;
